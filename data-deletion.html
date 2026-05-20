@@ -165,10 +165,11 @@
             <a href="index.html" class="back-link">&larr; Back to Home</a>
 
             <h2>Removing Uniseq and Your Data</h2>
-            <p>Because Uniseq is a local-first application with no user accounts and no cloud storage, all data deletion is entirely in your hands. This page explains where Uniseq stores data and how to remove it completely.</p>
+            <p>Uniseq is a local-first application. For most users — those using local workspaces or a custom sync backend — all data is entirely on your machine and under your full control. If you use the optional <strong>Uniseq Sync</strong> feature, some data is also stored on our backend, and this page explains how to remove that too.</p>
 
             <div class="info-box">
-                <strong>Good news:</strong> Uniseq stores no data on external servers. There is nothing on our end to delete. Everything is on your machine.
+                <strong>Local workspaces:</strong> Uniseq stores no data on external servers for you. There is nothing on our end to delete — everything is on your machine.<br><br>
+                <strong>Uniseq Sync users:</strong> Your notes are stored on our backend. You can delete them individually within the app, or delete your account to permanently wipe everything.
             </div>
 
             <h2>What Uniseq Stores Locally</h2>
@@ -228,9 +229,26 @@
                 </ul>
             </div>
 
+            <h2>Uniseq Sync Account Deletion</h2>
+            <p>If you use Uniseq Sync, your notes are stored on our backend (Supabase). You have two options for removing that data:</p>
+
+            <div class="method">
+                <h3>Option A: Delete content within the app</h3>
+                <p>You can delete individual notes or entire workspaces from within Uniseq. This removes the content from our backend immediately, but keeps your account active.</p>
+            </div>
+
+            <div class="method">
+                <h3>Option B: Delete your account</h3>
+                <p>Deleting your account permanently and irrecoverably removes all data associated with your account from our backend — notes, workspaces, and account credentials. To delete your account, use the account settings within the app or contact us at <a href="mailto:1004wsh@gmail.com">1004wsh@gmail.com</a>.</p>
+                <div class="warning">
+                    <strong>Warning:</strong> Account deletion is permanent and cannot be undone. Make sure to export or copy any notes you want to keep before proceeding.
+                </div>
+            </div>
+
             <h2>After Deletion</h2>
             <ul>
-                <li>No data is retained on our servers — there is nothing for us to clean up</li>
+                <li>For local workspaces: no data was ever on our servers — there is nothing for us to clean up</li>
+                <li>For Uniseq Sync: after account deletion, all your data is permanently removed from our backend</li>
                 <li>You can reinstall Uniseq at any time with a fresh start</li>
                 <li>If you kept your workspace folder, you can reopen it in a fresh install and all your notes will be intact</li>
             </ul>

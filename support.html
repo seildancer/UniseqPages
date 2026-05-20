@@ -179,7 +179,7 @@
             <div class="faq-item">
                 <div class="faq-question">Q: Where are my notes stored?</div>
                 <div class="faq-answer">
-                    <p>All your notes are stored as plain <code>.md</code> (Markdown) files inside the workspace folder you opened. Uniseq never uploads your data anywhere — everything lives on your own machine. You can find your files at any time using your operating system's file explorer.</p>
+                    <p>By default, all your notes are stored as plain <code>.md</code> (Markdown) files inside the workspace folder you opened — everything lives on your own machine. If you enable the optional <strong>Uniseq Sync</strong> feature, your notes are additionally stored on our backend (Supabase) and synced across devices. You can also connect a custom backend of your own. For local workspaces, you can find your files at any time using your operating system's file explorer.</p>
                 </div>
             </div>
 
@@ -234,7 +234,13 @@
             <div class="faq-item">
                 <div class="faq-question">Q: Does Uniseq sync with the cloud?</div>
                 <div class="faq-answer">
-                    <p>No. Uniseq is entirely local. If you want to sync your workspace across devices, use any file-sync tool you already trust (Dropbox, Syncthing, iCloud Drive, OneDrive, a git repository, etc.). Because your data is plain Markdown files, any sync tool works.</p>
+                    <p>It depends on which sync mode you use — all are optional:</p>
+                    <ul>
+                        <li><strong>Local only (default):</strong> No internet connection required. Everything stays on your machine.</li>
+                        <li><strong>Uniseq Sync:</strong> An optional built-in feature that stores and syncs your notes via our backend (Supabase). Requires an account. You can delete your content or your account at any time.</li>
+                        <li><strong>Custom sync:</strong> Connect any backend you own or trust. Your data goes where you point it.</li>
+                    </ul>
+                    <p>For local workspaces, you can still sync with any file-sync tool you already use (Dropbox, Syncthing, iCloud Drive, OneDrive, git, etc.) — your data is plain Markdown files, so any tool works.</p>
                 </div>
             </div>
 
@@ -261,7 +267,8 @@
             <div class="faq-item">
                 <div class="faq-question">Q: How do I delete my data?</div>
                 <div class="faq-answer">
-                    <p>Because all your data is stored locally, you control it entirely. See the <a href="data-deletion.html">Data Deletion</a> page for a full walkthrough of how to remove Uniseq and all associated data from your computer.</p>
+                    <p>For local workspaces, you control everything — just delete the workspace folder and app config files. See the <a href="data-deletion.html">Data Deletion</a> page for a full walkthrough.</p>
+                    <p>If you use <strong>Uniseq Sync</strong>, you can delete individual notes from within the app, or delete your account entirely to permanently wipe all data from our backend. The Data Deletion page covers both cases.</p>
                 </div>
             </div>
 

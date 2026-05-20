@@ -126,36 +126,48 @@
             <p class="last-updated">Last Updated: May 20, 2026</p>
 
             <h2>Introduction</h2>
-            <p>Uniseq ("we", "our", or "us") is a local-first desktop application. This Privacy Policy explains our data practices. The short version: <strong>Uniseq does not collect, transmit, or store any of your personal data on external servers.</strong> Your notes stay on your machine.</p>
+            <p>Uniseq ("we", "our", or "us") is a local-first desktop application. This Privacy Policy explains our data practices. By default, <strong>Uniseq does not collect, transmit, or store any of your personal data on external servers.</strong> Your notes stay on your machine — unless you choose to enable Uniseq Sync.</p>
 
             <div class="highlight-box">
-                <strong>Summary:</strong> Uniseq has no user accounts, no cloud sync, and no telemetry. All data lives in Markdown files on your own computer. We never see your notes.
+                <strong>Summary:</strong> Uniseq has no telemetry and no mandatory accounts. By default, all data lives in Markdown files on your own computer. The optional <strong>Uniseq Sync</strong> feature stores your notes on our backend (Supabase) — you can delete your content or your account at any time, which permanently removes all stored data.
             </div>
 
             <h2>Information We Do NOT Collect</h2>
-            <p>Because Uniseq operates entirely on your local machine, we do not collect:</p>
+            <p>Regardless of which sync mode you use, we do not collect:</p>
             <ul>
-                <li>Your name, email address, or any account credentials</li>
-                <li>The content of your notes, pages, or journal entries</li>
                 <li>Usage statistics or telemetry</li>
                 <li>Device identifiers or IP addresses</li>
                 <li>Location data</li>
                 <li>Crash reports or diagnostic data sent to our servers</li>
             </ul>
+            <p>If you use a <strong>local workspace</strong> or a <strong>custom sync backend</strong>, we additionally never see your name, email address, account credentials, or any note content — none of it ever reaches us.</p>
 
             <h2>How Your Data Is Stored</h2>
-            <p>All data created in Uniseq is stored as plain Markdown (<code>.md</code>) files in a workspace folder you choose on your computer. The app also maintains the following files locally:</p>
+            <h3>Local Workspaces (default)</h3>
+            <p>All data is stored as plain Markdown (<code>.md</code>) files in a workspace folder you choose on your computer. The app also maintains the following files locally:</p>
             <ul>
                 <li><strong>Workspace cache:</strong> A derived index rebuilt from your Markdown files at startup. Contains no original content — it is always reconstructible and disposable.</li>
                 <li><strong>Page order store:</strong> A <code>workspace-page-order.json</code> file in your OS app config directory that records the sidebar ordering of your pages.</li>
             </ul>
             <p>None of these files are transmitted anywhere. They never leave your device.</p>
 
+            <h3>Uniseq Sync (optional)</h3>
+            <p>Uniseq Sync is an opt-in feature that lets you sync your notes across devices via our backend. When you enable it:</p>
+            <ul>
+                <li>Your note content is stored on our backend, powered by <strong>Supabase</strong>.</li>
+                <li>An account (email and password) is required to authenticate.</li>
+                <li>Data is transmitted over encrypted connections (HTTPS/TLS).</li>
+            </ul>
+            <p>You remain in full control of your data. You can delete individual notes or workspaces directly within the app, or delete your account entirely — which permanently wipes all associated data from our backend with no recovery.</p>
+
+            <h3>Custom Sync (optional)</h3>
+            <p>Uniseq also supports connecting to a backend of your own choosing. In this case, your data is governed entirely by the provider you configure. We have no access to it.</p>
+
             <h2>Internet Access</h2>
-            <p>Uniseq does not require an internet connection and does not make any network requests during normal operation. The app does not phone home, check for updates automatically, or connect to any external service.</p>
+            <p>Uniseq does not require an internet connection for local workspaces and does not make background network requests, phone home, or check for updates automatically. Network access only occurs when you actively use Uniseq Sync or a custom sync backend.</p>
 
             <h2>Third-Party Services</h2>
-            <p>Uniseq does not integrate with any third-party analytics, advertising, or data-processing services.</p>
+            <p>Uniseq does not integrate with any third-party analytics or advertising services. For users of Uniseq Sync, note content is stored via <strong>Supabase</strong> (supabase.com). Supabase's own privacy policy applies to the infrastructure layer; we do not share your data with any other third party.</p>
 
             <h2>Children's Privacy</h2>
             <p>Because Uniseq collects no personal information from any user, there are no special concerns regarding children's data. The app is suitable for users of all ages from a data-privacy standpoint.</p>
@@ -164,7 +176,7 @@
             <p>Uniseq's source code is publicly available, allowing anyone to audit exactly what the application does and does not do with local data.</p>
 
             <h2>Changes to This Privacy Policy</h2>
-            <p>If we ever introduce features that change our data practices (for example, optional cloud sync), we will update this policy before shipping those features. The "Last Updated" date at the top of this page will reflect any changes.</p>
+            <p>If we introduce features that change our data practices, we will update this policy before shipping those features. The "Last Updated" date at the top of this page will reflect any changes.</p>
 
             <h2>Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us:</p>
