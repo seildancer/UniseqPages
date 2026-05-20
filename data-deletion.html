@@ -173,84 +173,59 @@
             </div>
 
             <h2>What Uniseq Stores Locally</h2>
-            <p>Uniseq creates and uses the following locations on your computer:</p>
+            <p>Uniseq stores everything inside the workspace folder you chose when setting up the app. There is no separate hidden app data directory — all your content lives in one place.</p>
             <ul>
-                <li><strong>Your workspace folder:</strong> The folder you opened as a workspace. Contains all your <code>.md</code> page and stream files, plus the <code>pages/</code>, <code>assets/</code>, <code>uniseq/</code>, <code>journals/</code>, and <code>diary/</code> subdirectories. This is your actual content.</li>
-                <li><strong>App config directory:</strong> A <code>workspace-page-order.json</code> file that stores your sidebar page ordering. Located in your OS app config folder (see paths below).</li>
-                <li><strong>Workspace cache:</strong> A derived index stored alongside the app or in a temp location. It is always reconstructible from your files and contains no original content.</li>
-                <li><strong>The Uniseq application binary itself:</strong> Installed via your OS package manager or installer.</li>
+                <li><strong>Your workspace folder:</strong> The folder you opened as a workspace. Contains all your <code>.md</code> page and stream files, plus the <code>pages/</code>, <code>assets/</code>, <code>uniseq/</code>, <code>journals/</code>, and <code>diary/</code> subdirectories.</li>
+                <li><strong>The app itself:</strong> On desktop, Uniseq is a portable executable — just a single file, no system-wide installation.</li>
             </ul>
 
-            <h2>App Config Directory Paths</h2>
-
-            <div class="method">
-                <h3>Windows</h3>
-                <p><code>%APPDATA%\uniseq\</code></p>
-                <p>Typically: <code>C:\Users\YourName\AppData\Roaming\uniseq\</code></p>
-            </div>
-
-            <div class="method">
-                <h3>macOS</h3>
-                <p><code>~/Library/Application Support/uniseq/</code></p>
-            </div>
-
-            <div class="method">
-                <h3>Linux</h3>
-                <p><code>~/.config/uniseq/</code></p>
-            </div>
-
-            <h2>How to Delete Your Data</h2>
+            <h2>How to Delete Your Local Data</h2>
 
             <div class="method">
                 <h3>Step 1: Back up anything you want to keep</h3>
-                <p>Before deleting, make sure to copy any notes or files you want to preserve. Your workspace folder contains plain Markdown files that can be opened in any text editor — no special export needed.</p>
+                <p>Your workspace contains plain Markdown files that can be opened in any text editor — no special export needed. Copy anything you want to keep before proceeding.</p>
             </div>
 
             <div class="method">
                 <h3>Step 2: Delete your workspace folder</h3>
-                <p>Delete the folder you opened as a workspace in Uniseq. This removes all your pages, streams, and assets. This step is optional if you want to keep your notes but remove the app.</p>
+                <p>Delete the workspace folder you opened in Uniseq. This removes all your pages, streams, assets, and app data in one step.</p>
                 <div class="warning">
                     <strong>Warning:</strong> Deleting your workspace folder permanently removes all your notes. Make sure you have a backup first.
                 </div>
             </div>
 
             <div class="method">
-                <h3>Step 3: Delete the app config directory</h3>
-                <p>Navigate to the app config directory for your OS (listed above) and delete the <code>uniseq/</code> folder. This removes the page order store and any cached data.</p>
-            </div>
-
-            <div class="method">
-                <h3>Step 4: Uninstall the application</h3>
-                <p>Uninstall Uniseq using your operating system's standard uninstall mechanism:</p>
+                <h3>Step 3: Delete the app</h3>
                 <ul>
-                    <li><strong>Windows:</strong> Settings → Apps → Uniseq → Uninstall</li>
-                    <li><strong>macOS:</strong> Drag Uniseq from Applications to the Trash, then empty the Trash</li>
-                    <li><strong>Linux:</strong> Use your package manager (e.g., <code>apt remove uniseq</code> or delete the AppImage)</li>
+                    <li><strong>Windows:</strong> Delete the Uniseq <code>.exe</code> file.</li>
+                    <li><strong>Mobile (iOS / Android):</strong> Delete the app from your device — the OS removes all associated data automatically.</li>
                 </ul>
             </div>
 
             <h2>Uniseq Sync Account Deletion</h2>
-            <p>If you use Uniseq Sync, your notes are stored on our backend (Supabase). You have two options for removing that data:</p>
+            <p>If you use Uniseq Sync, your notes are also stored on our backend. To permanently remove all your synced data, delete your account from within the app:</p>
 
             <div class="method">
-                <h3>Option A: Delete content within the app</h3>
-                <p>You can delete individual notes or entire workspaces from within Uniseq. This removes the content from our backend immediately, but keeps your account active.</p>
-            </div>
-
-            <div class="method">
-                <h3>Option B: Delete your account</h3>
-                <p>Deleting your account permanently and irrecoverably removes all data associated with your account from our backend — notes, workspaces, and account credentials. To delete your account, use the account settings within the app or contact us at <a href="mailto:1004wsh@gmail.com">1004wsh@gmail.com</a>.</p>
+                <h3>Delete your account in-app</h3>
+                <ol>
+                    <li>Open Uniseq and go to <strong>Settings → Info</strong></li>
+                    <li>Tap <strong>Delete Account</strong></li>
+                    <li>Confirm the deletion</li>
+                </ol>
+                <p>This permanently and irrecoverably removes everything associated with your account from our backend — all synced notes, workspaces, and account credentials.</p>
                 <div class="warning">
                     <strong>Warning:</strong> Account deletion is permanent and cannot be undone. Make sure to export or copy any notes you want to keep before proceeding.
                 </div>
             </div>
 
+            <p>If you need help or are unable to access the app, contact us at <a href="mailto:1004wsh@gmail.com">1004wsh@gmail.com</a> and we will delete your account manually.</p>
+
             <h2>After Deletion</h2>
             <ul>
-                <li>For local workspaces: no data was ever on our servers — there is nothing for us to clean up</li>
+                <li>For local-only workspaces: no data was ever on our servers — there is nothing for us to clean up</li>
                 <li>For Uniseq Sync: after account deletion, all your data is permanently removed from our backend</li>
-                <li>You can reinstall Uniseq at any time with a fresh start</li>
-                <li>If you kept your workspace folder, you can reopen it in a fresh install and all your notes will be intact</li>
+                <li>You can start fresh with Uniseq at any time by opening a new workspace folder</li>
+                <li>If you kept your workspace folder, you can reopen it later and all your notes will be intact</li>
             </ul>
 
             <h2>Questions?</h2>
