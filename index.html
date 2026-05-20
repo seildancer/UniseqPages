@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniseq - Local-First Outliner PKM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #134e5e;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #134e5e;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+            color: #134e5e;
+        }
+
+        .links {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .links h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .links ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            color: #134e5e;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Uniseq</h1>
+        <p>Your thoughts, your files, your machine</p>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Welcome to Uniseq</h2>
+            <p>Uniseq is a local-first outliner and personal knowledge management (PKM) desktop app. Write in plain Markdown — your files are always real files on your machine, never locked in a proprietary database.</p>
+
+            <p>We believe your notes should belong to you. Uniseq never uploads your data anywhere. Everything lives in Markdown files you can read, edit, move, or back up with any tool you already use.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>File-First</h3>
+                    <p>Every page is a plain <code>.md</code> file. Open them in any editor, sync them with any tool — Uniseq never holds your data hostage.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Outliner + Streams</h3>
+                    <p>Structure your thinking with hierarchical outliner pages and date-stamped stream journals for daily capture.</p>
+                </div>
+
+                <div class="feature">
+                    <h3>Wikilink References</h3>
+                    <p>Link pages together with <code>[[Page]]</code> syntax. Uniseq indexes all references so you can navigate your knowledge graph instantly.</p>
+                </div>
+            </div>
+
+            <h3>How It Works</h3>
+            <p>1. Open any folder on your computer as a workspace</p>
+            <p>2. Create and organize pages in an outliner tree</p>
+            <p>3. Capture daily notes in stream journals</p>
+            <p>4. Navigate connections via <code>[[wikilinks]]</code> and search</p>
+
+            <h3>Your Data, Your Control</h3>
+            <p>Uniseq collects no personal data and requires no account. All content is stored as Markdown files in the folder you choose. The app works entirely offline and always will.</p>
+        </div>
+
+        <div class="content links">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="data-deletion.html">Data Deletion</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <li><a href="support.html">Support &amp; Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Uniseq. All rights reserved.</p>
+    </footer>
+</body>
+</html>

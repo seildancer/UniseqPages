@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Uniseq</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #134e5e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #134e5e;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .highlight-box {
+            background: #e8f5e9;
+            border-left: 4px solid #71b280;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+
+        footer a {
+            color: #134e5e;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+            <p class="last-updated">Last Updated: May 20, 2026</p>
+
+            <h2>Introduction</h2>
+            <p>Uniseq ("we", "our", or "us") is a local-first desktop application. This Privacy Policy explains our data practices. The short version: <strong>Uniseq does not collect, transmit, or store any of your personal data on external servers.</strong> Your notes stay on your machine.</p>
+
+            <div class="highlight-box">
+                <strong>Summary:</strong> Uniseq has no user accounts, no cloud sync, and no telemetry. All data lives in Markdown files on your own computer. We never see your notes.
+            </div>
+
+            <h2>Information We Do NOT Collect</h2>
+            <p>Because Uniseq operates entirely on your local machine, we do not collect:</p>
+            <ul>
+                <li>Your name, email address, or any account credentials</li>
+                <li>The content of your notes, pages, or journal entries</li>
+                <li>Usage statistics or telemetry</li>
+                <li>Device identifiers or IP addresses</li>
+                <li>Location data</li>
+                <li>Crash reports or diagnostic data sent to our servers</li>
+            </ul>
+
+            <h2>How Your Data Is Stored</h2>
+            <p>All data created in Uniseq is stored as plain Markdown (<code>.md</code>) files in a workspace folder you choose on your computer. The app also maintains the following files locally:</p>
+            <ul>
+                <li><strong>Workspace cache:</strong> A derived index rebuilt from your Markdown files at startup. Contains no original content — it is always reconstructible and disposable.</li>
+                <li><strong>Page order store:</strong> A <code>workspace-page-order.json</code> file in your OS app config directory that records the sidebar ordering of your pages.</li>
+            </ul>
+            <p>None of these files are transmitted anywhere. They never leave your device.</p>
+
+            <h2>Internet Access</h2>
+            <p>Uniseq does not require an internet connection and does not make any network requests during normal operation. The app does not phone home, check for updates automatically, or connect to any external service.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>Uniseq does not integrate with any third-party analytics, advertising, or data-processing services.</p>
+
+            <h2>Children's Privacy</h2>
+            <p>Because Uniseq collects no personal information from any user, there are no special concerns regarding children's data. The app is suitable for users of all ages from a data-privacy standpoint.</p>
+
+            <h2>Open Source</h2>
+            <p>Uniseq's source code is publicly available, allowing anyone to audit exactly what the application does and does not do with local data.</p>
+
+            <h2>Changes to This Privacy Policy</h2>
+            <p>If we ever introduce features that change our data practices (for example, optional cloud sync), we will update this policy before shipping those features. The "Last Updated" date at the top of this page will reflect any changes.</p>
+
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:1004wsh@gmail.com">1004wsh@gmail.com</a></li>
+                <li><strong>Support Page:</strong> <a href="support.html">Visit Support</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Uniseq. All rights reserved. | <a href="index.html">Home</a> | <a href="terms-of-service.html">Terms</a> | <a href="support.html">Support</a></p>
+    </footer>
+</body>
+</html>

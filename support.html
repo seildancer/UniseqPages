@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support &amp; Contact - Uniseq</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #134e5e 0%, #71b280 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #134e5e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #134e5e;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 4px solid #134e5e;
+        }
+
+        .contact-box strong {
+            color: #134e5e;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #134e5e;
+            margin-bottom: 8px;
+            font-size: 1.15em;
+        }
+
+        .faq-answer {
+            color: #555;
+        }
+
+        .email-button {
+            display: inline-block;
+            background: #134e5e;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .email-button:hover {
+            background: #0d3a47;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+
+        footer a {
+            color: #134e5e;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Support &amp; Contact</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+            <h2>Get Help with Uniseq</h2>
+            <p>Need assistance? Check out our frequently asked questions below, or reach out directly.</p>
+
+            <div class="contact-box">
+                <p><strong>Email Support:</strong> <a href="mailto:1004wsh@gmail.com">1004wsh@gmail.com</a></p>
+                <p><strong>Response Time:</strong> We typically respond within 1-2 business days</p>
+                <a href="mailto:1004wsh@gmail.com?subject=Uniseq%20Support%20Request&body=Please%20describe%20your%20issue%20or%20question%3A%0A%0A" class="email-button">Contact Support</a>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Where are my notes stored?</div>
+                <div class="faq-answer">
+                    <p>All your notes are stored as plain <code>.md</code> (Markdown) files inside the workspace folder you opened. Uniseq never uploads your data anywhere — everything lives on your own machine. You can find your files at any time using your operating system's file explorer.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What is the difference between Pages and Streams?</div>
+                <div class="faq-answer">
+                    <p>Pages live in the <code>pages/</code> folder and are organized in a hierarchy. Their filenames encode the path (e.g. <code>Work___Projects___Alpha.md</code> for the page at Work → Projects → Alpha).</p>
+                    <p>Streams are date-stamped files (<code>yyyy_mm_dd.md</code>) inside stream folders like <code>journals/</code> or <code>diary/</code>. They are append-only buckets for daily capture and do not appear in the page tree. Stream pages cannot be referenced via <code>[[wikilinks]]</code>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do wikilinks work?</div>
+                <div class="faq-answer">
+                    <p>Type <code>[[Page Name]]</code> or <code>#Page Name</code> inside any page to create a reference. Uniseq indexes all references and will create an empty target file automatically if the referenced page doesn't exist yet. References inside fenced code blocks are ignored.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I use Uniseq with an existing Markdown folder?</div>
+                <div class="faq-answer">
+                    <p>Yes. Open any folder as a workspace. Uniseq will scan it and add the reserved folders (<code>pages/</code>, <code>assets/</code>, <code>uniseq/</code>, <code>journals/</code>, <code>diary/</code>) if they are missing. It will not overwrite or modify existing files during this setup.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: My page tree isn't updating after I edit a file outside the app.</div>
+                <div class="faq-answer">
+                    <p>Uniseq uses a filesystem watcher to detect external changes automatically. If the watcher fails (some network drives and certain OS configurations), it falls back to polling. Try the following:</p>
+                    <ul>
+                        <li>Wait a few seconds — polling has a small delay</li>
+                        <li>Use the refresh/reload workspace command in the app</li>
+                        <li>Restart the app if the issue persists</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: I renamed a page and now references to it are broken.</div>
+                <div class="faq-answer">
+                    <p>Always rename pages through Uniseq (via the sidebar or rename command) rather than directly in the file system. When you rename through the app, Uniseq automatically updates the page order store and handles the file rename correctly. Manual file renames bypass this logic and may leave stale references.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Where is the page order stored?</div>
+                <div class="faq-answer">
+                    <p>Sidebar ordering is saved in <code>workspace-page-order.json</code> inside your OS application config directory (not inside your workspace folder). This means the order is per-device, not synced with the workspace files.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Does Uniseq sync with the cloud?</div>
+                <div class="faq-answer">
+                    <p>No. Uniseq is entirely local. If you want to sync your workspace across devices, use any file-sync tool you already trust (Dropbox, Syncthing, iCloud Drive, OneDrive, a git repository, etc.). Because your data is plain Markdown files, any sync tool works.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I back up my notes?</div>
+                <div class="faq-answer">
+                    <p>Copy or sync your entire workspace folder. Every piece of content is a <code>.md</code> file — there is no hidden database to export. A simple <code>zip</code> of the folder is a complete backup.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I request new features or report bugs?</div>
+                <div class="faq-answer">
+                    <p>Absolutely! Send your feature requests or bug reports to <a href="mailto:1004wsh@gmail.com">1004wsh@gmail.com</a>. For bugs, please include:</p>
+                    <ul>
+                        <li>A description of what happened vs. what you expected</li>
+                        <li>Steps to reproduce the issue</li>
+                        <li>Your operating system and Uniseq version</li>
+                        <li>Screenshots or screen recordings if applicable</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I delete my data?</div>
+                <div class="faq-answer">
+                    <p>Because all your data is stored locally, you control it entirely. See the <a href="data-deletion.html">Data Deletion</a> page for a full walkthrough of how to remove Uniseq and all associated data from your computer.</p>
+                </div>
+            </div>
+
+            <h2>Still Need Help?</h2>
+            <p>If you didn't find the answer to your question, please reach out:</p>
+
+            <div class="contact-box">
+                <p><strong>Email:</strong> <a href="mailto:1004wsh@gmail.com">1004wsh@gmail.com</a></p>
+                <p><strong>Include:</strong></p>
+                <ul>
+                    <li>Your operating system (Windows / macOS / Linux) and version</li>
+                    <li>Uniseq version number (visible in the app title bar or About screen)</li>
+                    <li>A detailed description of your issue</li>
+                    <li>Screenshots or logs if helpful</li>
+                </ul>
+                <a href="mailto:1004wsh@gmail.com?subject=Uniseq%20Support%20Request&body=OS%3A%20%0AUniseq%20version%3A%20%0A%0AIssue%20Description%3A%0A" class="email-button">Send Support Email</a>
+            </div>
+
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a> — How we handle (or rather, don't handle) your data</li>
+                <li><a href="data-deletion.html">Data Deletion</a> — How to remove Uniseq and your local data</li>
+                <li><a href="terms-of-service.html">Terms of Service</a> — Read our terms and conditions</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Uniseq. All rights reserved. | <a href="index.html">Home</a> | <a href="privacy-policy.html">Privacy</a> | <a href="terms-of-service.html">Terms</a></p>
+    </footer>
+</body>
+</html>
